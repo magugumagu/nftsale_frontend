@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "ethers": "^5.6.9",
     "keccak256": "^1.0.6",
     "merkletreejs": "^0.2.32",
     "next": "12.2.4",
