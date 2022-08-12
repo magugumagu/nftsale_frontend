@@ -8,7 +8,7 @@ import SPAMDAO from '../utils/SPAMDAO.json';
 import Icon from '../public/assets/BF269BAB-EAE1-4422-B9B2-56AFE23E8294.gif'
 const TWITTER_HANDLE = 'SPAM_DAO';
 const TWITTER_LINK = `https://twitter.com/${TWITTER_HANDLE}`;
-const OPENSEA_LINK = 'https://testnets.opensea.io/collection/squarenft-fx8m0kf52y';
+const OPENSEA_LINK = 'https://testnets.opensea.io/collection/spamdao-nft';
 const CONTRACT_ADDRESS ="0x22eC8fE1d79b1B168AE7DF4644ba93f715Cc5056";
 const Home = () => {
   const [currentAccount, setCurrentAccount] = useState("");
