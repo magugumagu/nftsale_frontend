@@ -42,7 +42,7 @@ export default async (req,res) => {
 
 
     res.statusCode=200,
-    res.json( JSON.stringify({
+    res.json(JSON.stringify({
       hexProof,
     }))
     res.end()
@@ -54,5 +54,4 @@ const addresses = [
   '0xb13dAc27BEbF08778ac5aEC9387E56413773B875',
   '0x8c4f94242349F91660399A4c6b9950331E2b3794',
   '0x5f0e2edF0cBE3085b99285b8fB9DCAB9399610Bc',
-  '0xaf501dE56E1fc8064200Ba147B5Dc7309B274A35'
 ]

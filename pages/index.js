@@ -38,8 +38,6 @@ if (chainId !== rinkebyChainId) {
       const account = accounts[0];
       console.log("Found an authorized account:", account);
       setCurrentAccount(account);
-      console.log(account)
-      console.log("yeah",currentAccount)
     } else {
       console.log("No authorized account found");
     }
@@ -99,7 +97,6 @@ if (chainId !== rinkebyChainId) {
 
       if (ethereum) {
         const mintvalue = ethers.utils.parseUnits('0.0004', 'ether')
-        console.log(merkle)
         const merklejson=JSON.parse(merkle)
         const hexProof=merklejson.hexProof
         console.log(hexProof)
