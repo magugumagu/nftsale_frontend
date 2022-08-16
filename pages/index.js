@@ -4,12 +4,12 @@ import styles from '../styles/Home.module.css'
 import React, { useEffect, useState } from "react";
 import twitterLogo from '../public/assets/twitter-logo.svg';
 import {ethers} from "ethers";
-import SPAMDAO from '../utils/SPAMDAO.json';
-import Icon from '../public/assets/BF269BAB-EAE1-4422-B9B2-56AFE23E8294.gif'
-const TWITTER_HANDLE = 'SPAM_DAO';
+import TESTNFT from '../utils/TESTNFT.json';
+import Icon from '../public/assets/soba.png'
+const TWITTER_HANDLE = 'magugumagu';
 const TWITTER_LINK = `https://twitter.com/${TWITTER_HANDLE}`;
-const OPENSEA_LINK = 'https://testnets.opensea.io/collection/spamdao-nft';
-const CONTRACT_ADDRESS ="0x22eC8fE1d79b1B168AE7DF4644ba93f715Cc5056";
+const OPENSEA_LINK = 'https://testnets.opensea.io/collection/test-nft-fbpaguffvw';
+const CONTRACT_ADDRESS ="0x510C204E369199EF86644210DAd0537aE324255b";
 const Home = () => {
   const [currentAccount, setCurrentAccount] = useState("");
   const [merkle,setMerkle]
@@ -103,7 +103,7 @@ if (chainId !== rinkebyChainId) {
 
         const provider =new ethers.providers.Web3Provider(ethereum);
         const signer =provider.getSigner();
-        const connectedContract =new ethers.Contract(CONTRACT_ADDRESS, SPAMDAO.abi, signer);
+        const connectedContract =new ethers.Contract(CONTRACT_ADDRESS, TESTNFT.abi, signer);
         console.log("Going to pop wallet now to pay gas...")
         let nftTxn=await connectedContract.presaleMint(1,hexProof,{value:mintvalue});
         console.log("Mining...please wait.")
@@ -154,9 +154,9 @@ if (chainId !== rinkebyChainId) {
     <div className={styles.app}>
       <div className={styles.container}>
         <div className={styles.headercontainer}>
-          <p className={styles.gradienttext}>Stay Positive And Mint</p>
+          <p className={styles.gradienttext}>SAMPLE SITE</p>
           <p className={styles.subtext}>
-            welcome to SPAMDAO!!
+            welcome to TESTNFT mint page!!
           </p>
           <div className={styles.connectwalletcontainer}>
           <Image 
